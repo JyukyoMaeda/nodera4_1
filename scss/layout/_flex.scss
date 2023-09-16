@@ -61,6 +61,119 @@
 				}
 			}
 		}
+		// header
+		
+		&.-header-top{
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			padding: 1vh 2.5vw 1.5vh;
+			@include mq(sp){
+				justify-content: start;
+			}
+			@include mq(tb){
+				justify-content: center;
+				padding: 1.5vh 0 0;
+			}
+			.flexItem{
+				&.-logoArea{
+					width: calc(30%);
+					// padding-right: 1vw;
+					@include mq(tb){
+						width: calc(15%);
+						margin-left: auto;
+					}
+				}
+				&.-center-contentsArea{
+					span{
+						width: auto;
+					}
+					@include mq(sp){
+						width: 56%;
+						padding-left: 4vw;
+					}
+					@include mq(tb){
+						width: calc(55%);
+						padding: 0;
+					}
+					@include mq(pc){
+						width: calc(55%);
+						margin:auto 0.7% auto auto;
+					}
+				}
+				&.-right-contactArea{
+					width: calc(20%);
+					margin-right: auto;
+					p{
+						margin-top: .5vh;
+					}
+				}
+				&.-textArea{
+					@include mq(tb){
+						width: 65%;
+						padding-right: 4%;
+					}
+					@include mq(pc){
+						width: 60%;
+						padding-right: 1%;
+					}
+				}
+				&.-timeArea{
+					width: 95%;
+					@include mq(sp){
+						// margin-top: .2vh;
+					}
+					@include mq(tb){
+						width: 33%;
+					}
+					@include mq(tb-pc1000){
+						width: 37%;
+					}
+					@include mq(tb-pc1400){
+						width: 37%;
+					}
+					@include mq(pc){
+						width: 26%;
+					}
+				}
+
+			}
+		}
+		&.-header-c-inner{
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-items: center;
+			.flexItem{
+				@include mq(tb){
+					width: 49%;
+				}
+			}
+		}
+		&.-header-contactArea{
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			border: 1px solid black;
+			.flexItem{
+				width: 50%;
+				a{
+					display: block;
+					width: 100%;
+					height: 100%;
+					transition: .5s all;
+					span{
+						padding: 1vh 0 2.8vh;
+					}
+					&:hover{
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+
+
+
 		// スマホ時 > 順番逆
 		&.-reverse_s{
 			@include mq(sp){

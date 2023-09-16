@@ -312,74 +312,51 @@
     &.-b{font-weight: bold !important;}
 
     // 形
-    &.-family01{//しっぽり明朝
-        font-family: "shippori-mincho", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-    &.-family02{//A1MinchoStd Bold代用
-        font-family: "yu-gothic-pr6n", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-    &.-family03{//しっぽり
-        font-family: "source-han-sans-japanese", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-    }
-    &.-family04{//garamond
-        font-family: "garamond-premier-pro-display", serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-    &.-family05{//メイリオ
-        font-family:'メイリオ', 'Meiryo', sans-serif;
-    }
-    &.-family06{//Trajan
-        font-family: "trajan-pro-3", serif;
-        font-weight: 400;
+    &.-family01{//ロダン
+        font-family: "fot-rodin-pron", sans-serif;
+        font-weight: 600;
         font-style: normal;
     }
 
-    &.-REQUEST{
+
+    &.-freeDesign{
         background: white;
-        a{
-            span{
-                position: relative;
-                display: block;
-                &::after{
-                    content: "REQUEST";
-                    font-size: 11px;
-                    position: absolute;
-                    top: 70%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                    @include mq(tb){
-                        font-size: .65vw;
-                    }
-                }
+   
+        position: relative;
+        display: block;
+        &::after{
+            content: ">";
+            font-size: 11px;
+            position: absolute;
+            top: 50%;
+            left: 85%;
+            transform: translate(-50%,-55%);
+            @include mq(tb){
+                font-size: .65vw;
             }
         }
 
+
     }
-    &.-RESERVE{
+    &.-build{
         background: $site-color01;
-        span{
-            position: relative;
-            display: block;
-            &::after{
-                content: "RESERVE";
-                font-size: 11px;
-                position: absolute;
-                top: 70%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                @include mq(tb){
-                    font-size: .65vw;
-                }
+
+        position: relative;
+        display: block;
+        &::after{
+            content: ">";
+            font-size: 11px;
+            position: absolute;
+            top: 50%;
+            left: 85%;
+            transform: translate(-50%,-55%);
+            @include mq(tb){
+                font-size: .65vw;
             }
         }
     }
+
+    // PCナビ
     &.-TOP{
         position: relative;
         &::after{
@@ -389,7 +366,8 @@
             position: absolute;
             top:20%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -30%);
+
         }
     }
     &.-CONCEPT{
@@ -401,10 +379,34 @@
             position: absolute;
             top:20%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -30%);
         }
     }
-    &.-BUILT{
+    &.-LANDPLAN{
+        position: relative;
+        &::after{
+            content: "LAND PLAN";
+            font-size: .6vw;
+            font-weight: bold;
+            position: absolute;
+            top:20%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+        }
+    }
+    &.-FREEPLAN{
+        position: relative;
+        &::after{
+            content: "FREE PLAN";
+            font-size: .6vw;
+            font-weight: bold;
+            position: absolute;
+            top:20%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+        }
+    }
+    &.-BUILDHOUSE{
         position: relative;
         &::after{
             content: "BUILT HOUSE";
@@ -413,7 +415,7 @@
             position: absolute;
             top:20%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -30%);
         }
     }
     &.-SETSUBI{
@@ -425,7 +427,7 @@
             position: absolute;
             top:20%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -30%);
         }
     }
     &.-LOCATION{
@@ -437,7 +439,7 @@
             position: absolute;
             top:20%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -30%);
         }
     }
     &.-JYUKYO{
@@ -461,6 +463,46 @@
         }
     }
 
+    // SPナビ
+    &.-sp-TOP{
+        position: relative;
+        &::after{
+            background: url(../images/SVG/sp_icon01.svg) no-repeat;
+        }
+    }
+    &.-sp-CONCEPT{
+        position: relative;
+        &::after{
+            background: url(../images/SVG/sp_icon02.svg) no-repeat;
+        }
+    }
+    &.-sp-LANDPLAN{
+        position: relative;
+        &::after{
+            width: 32px !important;
+            height: 32px !important;
+            background: url(../images/SVG/sp_icon07.svg) no-repeat;
+        }
+    }
+    &.-sp-FREEPLAN{
+        position: relative;
+        &::after{
+            background: url(../images/SVG/sp_icon03.svg) no-repeat;
+        }
+    }
+    &.-sp-BUILTHOUSE{
+        position: relative;
+        &::after{
+            background: url(../images/SVG/sp_icon04.svg) no-repeat;
+        }
+    }
+    &.-sp-LOCATION{
+        position: relative;
+        &::after{
+            background: url(../images/SVG/sp_icon05.svg) no-repeat;
+        }
+    }
+
     // 色
     &.-white{
         color: white;
@@ -475,7 +517,10 @@
         }
     }
     &.-red{
-  
+        color: #e81c24;
+        a{
+            color: #e81c24;
+        }
     }
     &.-blue{
     }
