@@ -172,6 +172,90 @@
 			}
 		}
 
+		// TOP > 駅周辺
+		&.-stationLists{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			@include mq(tb){
+				flex-wrap: nowrap;
+				justify-content: space-between;
+			}
+			.flexItem{
+				width: 100%;
+				padding: 0;
+				@include mq(tb){
+						width: 100/3;
+						padding: 0 1%;
+				}
+				&.-stationLogo{
+					position: relative;
+					&.-a{
+						&::after{
+							@include mq(tb){
+								content: "";
+								display: inline-block;
+								background-image: url(../images/logo/SVG/station-logo01.svg);
+								background-size: cover;
+								width: 58%;
+								height: 20%;
+								position: absolute;
+								top: -3%;
+								left: -10%;
+							}
+						}
+					}
+					&.-b{
+						&::after{
+							@include mq(tb){
+								content: "";
+								display: inline-block;
+								background-image: url(../images/logo/SVG/station-logo02.svg);
+								background-size: cover;
+								width: 58%;
+								height: 20%;
+								position: absolute;
+								top: -3%;
+								left: -10%;
+							}
+						}
+					}
+					&.-c{
+						&::after{
+							@include mq(tb){
+								content: "";
+								display: inline-block;
+								background-image: url(../images/logo/SVG/station-logo03.svg);
+								background-size: cover;
+								width: 29%;
+								height: 14%;
+								position: absolute;
+								top: -3%;
+								left: -5%;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.-youtubeLists{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			@include mq(tb){
+				flex-wrap: nowrap;
+				justify-content: space-between;
+			}
+			.flexItem{
+				width: 100%;
+				padding: 0;
+				@include mq(tb){
+						width: 100/2;
+						padding: 0 1%;
+				}
+			}
+		}
+
 
 
 		// スマホ時 > 順番逆
@@ -236,142 +320,7 @@
 				}
 			}
 		}
-		&.-contact{//お問い合わせ
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-evenly;
-			width: 90vw;
-			margin: auto;
-			@media screen and (min-width: 768px){
-				flex-wrap: nowrap;
-				width: 100vw;
-				max-width: 1170px;
-			}
-			.flexItem{
-				width: 35vw;
-				@include mq(tb){
-					width: 15vw;
-				}
-			}
-		}
-		&.-contact02{
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-evenly;
-			width: 90vw;
-			margin: auto;
-			@media screen and (min-width: 768px){
-				flex-wrap: nowrap;
-				width: 100vw;
-				max-width: 1350px;
-			}
-			.flexItem{
-				width: 32vw;
-				margin-bottom: 2vw;
-				@include mq(tb){
-					width: 12vw;
-					margin-bottom: auto;
-
-				}
-			}
-		}
-		&.-contact03{
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			width: 90vw;
-			margin: auto;
-			@media screen and (min-width: 768px){
-				flex-wrap: nowrap;
-				width: 100vw;
-				// max-width: 1290px;
-			}
-			.flexItem{
-				width: 42vw;
-				margin-bottom: 5vw;
-				@include mq(tb){
-					width: 20vw;
-					margin-bottom: auto;
-				}
-			}
-		}
-		&.-contact-box{
-			display: flex;
-			flex-wrap: wrap;
-			width: 100%;
-			margin: auto;
-			@media screen and (min-width: 768px){
-				flex-wrap: nowrap;
-			}
-			.flexItem{
-				width: calc(50%);
-				@media screen and (min-width: 768px){
-					width: 25%;
-				}
-
-				&:nth-child(1){
-					.l-linkImg{
-						background: $contact-item-1;
-					}
-				}
-				&:nth-child(2){
-					.l-linkImg{
-						background: $contact-item-2;
-					}
-
-				}
-				&:nth-child(3){
-					.l-linkImg{
-						background: $contact-item-3;
-					}
-
-				}
-				&:nth-child(4){
-					.l-linkImg{
-						background: $contact-item-4;
-					}
-				}
-			}
-		}
-		&.-contact-box_okano{
-			display: flex;
-			flex-wrap: nowrap;
-			justify-content: space-between;
-			width: 100%;
-			margin: auto;
-			@include mq(tb){
-				width: 75%;
-				justify-content: space-evenly;
-			}
-			.flexItem{
-				width: calc(30%);
-				@include mq(tb){
-					width: 30%;
-				}
-				&:nth-child(1){
-					.l-linkImg{
-						background: $contact-item-1;
-					}
-				}
-				&:nth-child(2){
-					.l-linkImg{
-						background: $contact-item-2;
-					}
-
-				}
-				&:nth-child(3){
-					.l-linkImg{
-						background: $contact-item-3;
-					}
-
-				}
-				// &:nth-child(4){
-				// 	.l-linkImg{
-				// 		background: $contact-item-4;
-				// 	}
-				// }
-			}
-		}
+		// お問い合わせについては、「scss/layout/_contact.scss」に記述することにする。
 		&.-tab-box{
 			width: 90vw;
 			margin: auto;
@@ -434,7 +383,7 @@
 				justify-content: space-around;
 				.flexItem{
 					width: 100%;
-					padding: 0 5%;
+					padding: 0 2%;
 					@include mq(tb){
 						width: 50%;
 						padding: 0 2%;

@@ -13,3 +13,233 @@
 	// コンタクトの要素は、「./layout/_flex.scss」内の
 	// 「l-flex--contents」を使用してください。
 }
+
+
+.l-flex--area{
+	.l-flex--contents{
+		&.-contact{//お問い合わせ
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			width: 90vw;
+			margin: auto;
+			@media screen and (min-width: 768px){
+				flex-wrap: nowrap;
+				width: 100vw;
+				max-width: 1170px;
+			}
+			.flexItem{
+				width: 35vw;
+				@include mq(tb){
+					width: 15vw;
+				}
+			}
+		}
+		&.-contact02{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			width: 90vw;
+			margin: auto;
+			@media screen and (min-width: 768px){
+				flex-wrap: nowrap;
+				width: 100vw;
+				max-width: 1350px;
+			}
+			.flexItem{
+				width: 32vw;
+				margin-bottom: 2vw;
+				@include mq(tb){
+					width: 12vw;
+					margin-bottom: auto;
+
+				}
+			}
+		}
+		&.-contact03{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 90vw;
+			margin: auto;
+			@media screen and (min-width: 768px){
+				flex-wrap: nowrap;
+				width: 100vw;
+				// max-width: 1290px;
+			}
+			.flexItem{
+				width: 42vw;
+				margin-bottom: 5vw;
+				@include mq(tb){
+					width: 20vw;
+					margin-bottom: auto;
+				}
+			}
+		}
+		&.-contact-box{
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			margin: auto;
+			@media screen and (min-width: 768px){
+				flex-wrap: nowrap;
+			}
+			.flexItem{
+				width: calc(50%);
+				@media screen and (min-width: 768px){
+					width: 25%;
+				}
+
+				&:nth-child(1){
+					.l-linkImg{
+						background: $contact-item-1;
+					}
+				}
+				&:nth-child(2){
+					.l-linkImg{
+						background: $contact-item-2;
+					}
+
+				}
+				&:nth-child(3){
+					.l-linkImg{
+						background: $contact-item-3;
+					}
+
+				}
+				&:nth-child(4){
+					.l-linkImg{
+						background: $contact-item-4;
+					}
+				}
+			}
+		}
+		&.-contact-box_okano{
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			width: 100%;
+			margin: auto;
+			@include mq(tb){
+				width: 75%;
+				justify-content: space-evenly;
+			}
+			.flexItem{
+				width: calc(30%);
+				@include mq(tb){
+					width: 30%;
+				}
+				&:nth-child(1){
+					.l-linkImg{
+						background: $contact-item-1;
+					}
+				}
+				&:nth-child(2){
+					.l-linkImg{
+						background: $contact-item-2;
+					}
+
+				}
+				&:nth-child(3){
+					.l-linkImg{
+						background: $contact-item-3;
+					}
+
+				}
+				// &:nth-child(4){
+				// 	.l-linkImg{
+				// 		background: $contact-item-4;
+				// 	}
+				// }
+			}
+		}
+		&.-contact-box_okano02{
+			display: flex;
+			flex-wrap: wrap;
+			margin: auto;
+			@include mq(tb){
+				flex-wrap: nowrap;
+				justify-content: space-between;
+			}
+			.flexItem{
+				&.-leftBox{
+					background: rgb(253, 238, 238);
+					@include mq(sp){
+						border-bottom: 1px solid #ffffff;
+					}
+					@include mq(tb){
+						border-right: 1px solid #707070;
+					}
+				}
+				&.-rightBox{
+					// background: aliceblue;
+				}
+				&.-leftBox,
+				&.-rightBox{
+					width: calc(100%);
+					padding: 10% 5%;
+					@include mq(tb){
+						width: 50%;
+						padding: 5% 2.5% !important;
+					}
+					.c-title_left,
+					.c-title_right{
+						width: 40%;
+						margin: auto;
+						@include mq(tb){
+							width: 35%;
+						}
+					}
+					&_item01,
+					&_item02{
+						position: relative;
+						width: 50%;
+						margin: 0 1%;
+						@include mq(tb){
+							width: 45%;
+						}
+						a{
+							display: block;
+							padding: 5% 4%;
+							background: #ffffff;
+							border: 1px solid #707070;
+							border-radius: 5px;
+							@include mq(tb){
+								padding: 3% 4%;
+							}
+							&::after{
+								content: ">";
+								position: absolute;
+								top: 50%;
+								right: 4%;
+								transform: translateY(-50%);
+							}
+						}
+					}
+
+				}
+				// &:nth-child(1){
+				// 	.l-linkImg{
+				// 		background: $contact-item-1;
+				// 	}
+				// }
+				// &:nth-child(2){
+				// 	.l-linkImg{
+				// 		background: $contact-item-2;
+				// 	}
+
+				// }
+				// &:nth-child(3){
+				// 	.l-linkImg{
+				// 		background: $contact-item-3;
+				// 	}
+				// }
+				// &:nth-child(4){
+				// 	.l-linkImg{
+				// 		background: $contact-item-4;
+				// 	}
+				// }
+			}
+		}
+	}
+}

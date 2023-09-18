@@ -1,6 +1,26 @@
 
 body{
-	background-image: url(../images/bg/border-bg.jpg);
+	position: relative;
+	&::before,
+	&::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		background-image: url(../images/bg/border-bg.png);
+		width: 10px;
+		height: 100%;
+		z-index: 999;
+		opacity: .8;
+		@include mq(tb){
+			width: 35px;
+		}
+	}
+	&::before{
+		left: 0;
+	}
+	&::after{
+		right: 0;
+	}
 }
 
 
