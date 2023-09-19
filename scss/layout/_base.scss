@@ -96,7 +96,14 @@ img{
 
 
 
-
+.w1600{
+	width: 95% !important;
+	max-width: 1600px;
+	margin: auto;
+	&.-s100{
+		width: 100% !important;
+	}
+}
 .w1200{
 	width: 95% !important;
 	max-width: 1200px;
@@ -113,6 +120,11 @@ img{
 .w850{
 	width: 95%;
 	max-width: 850px;
+	margin: auto;
+}
+.w600{
+	width: 40%;
+	max-width: 600px;
 	margin: auto;
 }
 .w90-s{
@@ -145,6 +157,12 @@ img{
 		margin-top: 5vh !important;
 	}
 }
+.l-mgt_7{
+	margin-top: 5vh !important;
+	@include mq(tb){
+		margin-top: 7vh !important;
+	}
+}
 .l-mgt_10{
 	margin-top: 5vh !important;
 	@include mq(tb){
@@ -155,6 +173,12 @@ img{
 	margin-top: 5vh !important;
 	@include mq(tb){
 		margin-top: 10vh !important;
+	}
+}
+.l-mgt_20{
+	margin-top: 30vh !important;
+	@include mq(tb){
+		margin-top: 20vh !important;
 	}
 }
 .l-mgt_-10{

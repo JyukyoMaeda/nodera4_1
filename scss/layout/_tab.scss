@@ -1,32 +1,28 @@
 
 
 .l-tabs--area{
+    margin: auto;
     text-align: center;
-    @media screen and (min-width: 767px){
-        width: 100%;
-        max-width: 1000px;
-        margin: auto;
+    border: 1px solid #707070;
+
+    @include mq(tb){
+
     }
     .tab-item{
         display: inline-block;
-        width: calc(22% - 10px);
-        margin: 0 5px;
-        font-size: 12px;
+        width: 49.2%;
+
         line-height: 2;
-        color: white;
-        background: #B9B9B9;
+        color: #707070;
+        background: #ffffff;
         text-align: center;
-        font-weight: bold;
         transition: all .3s ease;
         &:hover{
-            background: #66BBC4;
-            box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            color: #ffffff;
+            background: #B9B9B9;
         }
-        @media screen and (min-width: 767px){
-            width: 15%;
-            margin: 0 5px;
-            font-size: 20px;
-            line-height: 1.5;
+        @include mq(tb){
+            width: 49.68%;
         }
     }
     input[name="tab-item"] {
@@ -34,14 +30,12 @@
     }
     .tab-content {
         display: none;
-        padding: 45px 0px 40px;
-        margin: auto 10px;
+        margin: auto;
+        border-top: 1px solid #707070;
         clear: both;
         overflow: hidden;
         @media screen and (min-width: 767px){
-            margin-left: 14%;
-            margin-right: -5%;
-            padding: 45px 0px 85px;
+
         }
         .tab-content-img{
             img{
@@ -50,19 +44,15 @@
             }
         }
     }
-    #iruma:checked ~ #iruma-content,
-    #tokorozawa:checked ~ #tokorozawa-content,
-    #hannou:checked ~ #hannou-content,
-    #kawagoe:checked ~ #kawagoe-content {
+    #g01:checked ~ #g01-content,
+    #n01:checked ~ #n01-content {
         display: block !important;
         // opacity: 1;
-        // transition: all 1s ease;
+        transition: all 1s ease;
     }
     input:checked + .tab-item {
-        background-color: #66BBC4;
+        background-color: #B9B9B9;
         color: white;
-        text-shadow: 1px 1px 1px $item-hover--bg;
-        box-shadow: 1px 1px 4px 0px $item-hover--bg;
         transition: all .3s ease;
     }
 }

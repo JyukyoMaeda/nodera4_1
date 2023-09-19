@@ -1,5 +1,14 @@
 
 .l-text{
+
+    // 影
+    &.-shadow{
+        text-shadow: 3px 4px 4px rgb(0 0 0 / 11%);
+    }
+
+
+
+
     line-height: 1.5;
     &.-lh-1{
         line-height: 1;
@@ -511,15 +520,15 @@
         }
     }
     &.-black{
-        color: black;
+        color: #2e2e2e;
         a{
-            color: black;
+            color: #2e2e2e;
         }
     }
     &.-red{
-        color: #e81c24;
+        color: #e34242;
         a{
-            color: #e81c24;
+            color: #e34242;
         }
     }
     &.-blue{
@@ -528,8 +537,12 @@
         text-shadow: 1px 1px 10px rgb(236, 236, 236);
     }
     &.-pink{
-        // color: $text-pink;
-        text-shadow: 1px 1px 10px rgb(238, 238, 238);
+        color: #f29bbd;
+        // color: #c96b90;
+        a{
+            color: #f29bbd;
+            // color: #c96b90;
+        }
     }
     &.-s-white{
         text-shadow: 2px 2px 3px white;

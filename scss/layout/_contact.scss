@@ -161,39 +161,63 @@
 				flex-wrap: nowrap;
 				justify-content: space-between;
 			}
+						// タイプ02
+						&.-type02{
+							justify-content: space-evenly;
+							@include mq(tb){
+								justify-content: space-between;
+							}
+						}
 			.flexItem{
 				&.-leftBox{
-					background: rgb(253, 238, 238);
+					// background: #c96b9042;
+					// background: #c96b90;
 					@include mq(sp){
 						border-bottom: 1px solid #ffffff;
 					}
 					@include mq(tb){
-						border-right: 1px solid #707070;
+						// border-right: 1px solid #707070;
 					}
 				}
 				&.-rightBox{
-					// background: aliceblue;
+					// background: rgb(195 29 29 / 28%);
+					// background: #c31d1d;
 				}
 				&.-leftBox,
 				&.-rightBox{
 					width: calc(100%);
 					padding: 10% 5%;
+					border-radius: 10px;
 					@include mq(tb){
-						width: 50%;
+						width: 48.5%;
 						padding: 5% 2.5% !important;
+						background: #fdfdfd;
+						// border: 1px solid #d8d8d8;
+						filter: drop-shadow(1px 1px 1px #d8d8d8);
+
 					}
+							// バージョン02
+							&.-v02{
+								width: 45%;
+   						 		padding: 2.5% 1%;
+								@include mq(tb){
+									width: 37.5%;
+    								padding: 5% 0.5% !important;
+								}
+							}
 					.c-title_left,
 					.c-title_right{
-						width: 40%;
+						width: 60%;
 						margin: auto;
 						@include mq(tb){
-							width: 35%;
+							width: 60%;
+							// width: 35%;
 						}
 					}
 					&_item01,
 					&_item02{
 						position: relative;
-						width: 50%;
+						width: 45%;
 						margin: 0 1%;
 						@include mq(tb){
 							width: 45%;

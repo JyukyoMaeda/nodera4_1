@@ -11,8 +11,11 @@
         // margin: 145px 0 auto auto;
     }
     .l-slickImg {
-        margin: 0 5px 10px;
+        margin: 0 40px 10px;
         text-align: end;
+        @include mq(tb){
+            margin: 0 50px 15px;
+        }
         img{
             width: 100%;
             height: auto;
@@ -26,15 +29,13 @@
     width: 3vw;
     filter: drop-shadow(1px 1px 1px black);
     pointer-events: all;
-    // background: $main-color--w;
-    // border-radius: 50%;
     transition: .8s all;
     @include mq(tb){
         width: 3vw;
         max-width: 80px;
     }
     @include mq(pc){
-        width: 2.5vw;
+        width: 1.5vw;
         max-width: 80px;
     }
     &:hover{
@@ -64,8 +65,8 @@
     transform: translateY(-50%);
     z-index: 1;
     @include mq(tb){
-        top: -8%;
-        left: 5%;
+        // top: -8%;
+        // left: 5%;
     }
   }
 //   button {

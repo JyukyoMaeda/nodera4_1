@@ -49,6 +49,67 @@
 				}
 			}
 
+			// 区画・街並み
+			&.-onClickImg{
+				&_item01{
+					position: absolute;
+					top: 90%;
+					left: 18.9%;
+					transform: translate(-50%,-50%);
+					
+					width: 27%;
+					height: 20%;
+					@include mq(tb){
+						top: 87%;
+						left: 26.9%;
+
+						width: 20%;
+						height: 25.7%;
+					}
+				}
+				&_item02{
+					position: absolute;
+					top: 90%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					
+					width: 27%;
+					height: 20%;
+					@include mq(tb){
+						top: 87%;
+						left: 50%;
+						width: 20%;
+						height: 25.7%;
+					}
+				}
+				&_item03{
+					position: absolute;
+					top: 90%;
+					left: 81.2%;
+					transform: translate(-50%,-50%);
+
+					width: 27%;
+					height: 20%;
+					@include mq(tb){
+						top: 87%;
+						left: 73%;
+						width: 20%;
+						height: 25.7%;
+					}
+				}
+			}
+
+			// 自由設計
+			&.-freeplan-slider{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				@include mq(tb){
+					// top: 50%;
+					// left: 50%;
+					// transform: translate(-50%,-50%);
+				}
+			}
 
 
 
