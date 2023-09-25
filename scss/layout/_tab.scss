@@ -1,17 +1,12 @@
-
-
 .l-tabs--area{
     margin: auto;
     text-align: center;
     border: 1px solid #707070;
 
-    @include mq(tb){
-
-    }
     .tab-item{
         display: inline-block;
-        width: 49.2%;
-
+        // width: 49.2%;
+        width: calc((100% - 11px) / 3);
         line-height: 2;
         color: #707070;
         background: #ffffff;
@@ -22,10 +17,14 @@
             background: #B9B9B9;
         }
         @include mq(tb){
-            width: 49.68%;
+            // width: 49.68%;
+            width: calc((100% - 11px) / 3);
         }
     }
-    input[name="tab-item"] {
+    input[name="tab-item01"],
+    input[name="tab-item02"],
+    input[name="tab-item03"],
+    input[name="tab-item17"] {
         display: none;
     }
     .tab-content {
@@ -44,8 +43,24 @@
             }
         }
     }
-    #g01:checked ~ #g01-content,
-    #n01:checked ~ #n01-content {
+
+
+    #g01:checked ~ #g01-content,#n01:checked ~ #n01-content,#m01:checked ~ #m01-content {
+        display: block !important;
+        // opacity: 1;
+        transition: all 1s ease;
+    }
+    #g02:checked ~ #g02-content,#n02:checked ~ #n02-content,#m02:checked ~ #m02-content {
+        display: block !important;
+        // opacity: 1;
+        transition: all 1s ease;
+    }
+    #g03:checked ~ #g03-content,#n03:checked ~ #n03-content,#m03:checked ~ #m03-content {
+        display: block !important;
+        // opacity: 1;
+        transition: all 1s ease;
+    }
+    #g17:checked ~ #g17-content,#n17:checked ~ #n17-content,#m17:checked ~ #m17-content{
         display: block !important;
         // opacity: 1;
         transition: all 1s ease;

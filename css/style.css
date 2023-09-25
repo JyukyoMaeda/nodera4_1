@@ -862,6 +862,31 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 768px) {
+  .l-contents.-img-bg .l-contentsBox.-tab-sliderArea {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-tab-sliderArea {
+    top: 6%;
+    left: 6%;
+    width: 45%;
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-tab-obi {
+  filter: drop-shadow(1px 1px 2.5px rgba(0, 0, 0, 0.6));
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-tab-obi {
+    top: 0;
+    left: 0;
+    width: 45%;
+  }
+}
 .l-contents.-img-bg .l-contentsBox.-right-topBtn {
   top: 2.5%;
   left: 50%;
@@ -3161,7 +3186,7 @@ svg#bottomBtn_right .cls-2 {
 }
 .l-tabs--area .tab-item {
   display: inline-block;
-  width: 49.2%;
+  width: calc((100% - 11px) / 3);
   line-height: 2;
   color: #707070;
   background: #ffffff;
@@ -3174,10 +3199,13 @@ svg#bottomBtn_right .cls-2 {
 }
 @media screen and (min-width: 767px) {
   .l-tabs--area .tab-item {
-    width: 49.68%;
+    width: calc((100% - 11px) / 3);
   }
 }
-.l-tabs--area input[name=tab-item] {
+.l-tabs--area input[name=tab-item01],
+.l-tabs--area input[name=tab-item02],
+.l-tabs--area input[name=tab-item03],
+.l-tabs--area input[name=tab-item17] {
   display: none;
 }
 .l-tabs--area .tab-content {
@@ -3191,8 +3219,19 @@ svg#bottomBtn_right .cls-2 {
   width: 100%;
   height: auto;
 }
-.l-tabs--area #g01:checked ~ #g01-content,
-.l-tabs--area #n01:checked ~ #n01-content {
+.l-tabs--area #g01:checked ~ #g01-content, .l-tabs--area #n01:checked ~ #n01-content, .l-tabs--area #m01:checked ~ #m01-content {
+  display: block !important;
+  transition: all 1s ease;
+}
+.l-tabs--area #g02:checked ~ #g02-content, .l-tabs--area #n02:checked ~ #n02-content, .l-tabs--area #m02:checked ~ #m02-content {
+  display: block !important;
+  transition: all 1s ease;
+}
+.l-tabs--area #g03:checked ~ #g03-content, .l-tabs--area #n03:checked ~ #n03-content, .l-tabs--area #m03:checked ~ #m03-content {
+  display: block !important;
+  transition: all 1s ease;
+}
+.l-tabs--area #g17:checked ~ #g17-content, .l-tabs--area #n17:checked ~ #n17-content, .l-tabs--area #m17:checked ~ #m17-content {
   display: block !important;
   transition: all 1s ease;
 }

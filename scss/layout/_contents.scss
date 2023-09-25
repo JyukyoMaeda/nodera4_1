@@ -111,7 +111,29 @@
 				}
 			}
 
+			// 新築戸建 > タブ
+			&.-tab-sliderArea{
+				@include mq(sp){
+					top: 5%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 90%;
+				}
+				@include mq(tb){
+					top: 6%;
+					left: 6%;
+					width: 45%;
+				}
+			}
+			&.-tab-obi{
+				filter: drop-shadow(1px 1px 2.5px rgba(0, 0, 0, 0.6));
 
+				@include mq(tb){
+					top: 0;
+					left: 0;
+					width: 45%;
+				}
+			}
 
 			
 			//サイト右側中段に表示 （PCのみ）
