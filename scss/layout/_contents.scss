@@ -114,13 +114,15 @@
 			// 新築戸建 > タブ
 			&.-tab-sliderArea{
 				@include mq(sp){
-					top: 5%;
+					top: 10%;
+					// top: 5%;
 					left: 50%;
 					transform: translateX(-50%);
 					width: 90%;
 				}
 				@include mq(tb){
-					top: 6%;
+					top: 10%;
+					// top: 6%;
 					left: 6%;
 					width: 45%;
 				}
@@ -134,7 +136,39 @@
 					width: 45%;
 				}
 			}
-
+			&.-tapMe{
+				top: 58%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: 25%;
+				@include mq(tb){
+					top: 90%;
+    				left: 74%;
+					width: 14%;
+				}
+			}
+			&.-tab-thum-main{
+				top: 30.5%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 90%;
+				@include mq(tb){
+					top: 53%;
+					left: 26%;
+					width: 45%;
+				}
+			}
+			&.-tab-thum-ImgBox{
+				top: 79%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 80%;
+				@include mq(tb){
+					top: 50%;
+					left: 74%;
+					width: 45%;
+				}
+			}
 			
 			//サイト右側中段に表示 （PCのみ）
 			&.-right-topBtn{

@@ -21,6 +21,34 @@
             height: auto;
         }
     }
+
+    // サムナイルスライダー
+    .tab-thum{
+            &.-Box44{
+                display: flex;
+                flex-wrap: wrap;
+                .slick-track {
+                    transform: unset !important;
+                }
+                .thumbnail-img{
+                    width: 23% !important;
+                    margin: 2px;
+                    background: black;
+                    overflow: hidden;
+                    img{
+                        opacity: .8;
+                    }
+                    &.slick-current{
+                        img{
+                            opacity: 1;
+                        }
+                    }
+
+                }
+            }
+    }
+
+
 }
 
 
@@ -43,32 +71,32 @@
             width: 4vw;
         }
     }
-  }
-  .prev-arrow {
-    position: absolute;
-    top: 50%;
-    left: 4%;
-    transform: translateY(-50%);
-    z-index: 1;
-    @include mq(tb){
-        // top: -8%;
-        // left: 0;
-    }
-    &:hover{
-        
-    }
-  }
-  .next-arrow {
-    position: absolute;
-    top: 50%;
-    right: 4%;
-    transform: translateY(-50%);
-    z-index: 1;
-    @include mq(tb){
-        // top: -8%;
-        // left: 5%;
-    }
-  }
+}
+.prev-arrow {
+position: absolute;
+top: 50%;
+left: 4%;
+transform: translateY(-50%);
+z-index: 1;
+@include mq(tb){
+    // top: -8%;
+    // left: 0;
+}
+&:hover{
+    
+}
+}
+.next-arrow {
+position: absolute;
+top: 50%;
+right: 4%;
+transform: translateY(-50%);
+z-index: 1;
+@include mq(tb){
+    // top: -8%;
+    // left: 5%;
+}
+}
 //   button {
 //     -webkit-appearance: none;
 //     -moz-appearance: none;
