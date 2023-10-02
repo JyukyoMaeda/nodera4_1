@@ -165,7 +165,11 @@
 						&.-type02{
 							justify-content: space-evenly;
 							@include mq(tb){
-								justify-content: space-between;
+								width: 80%;
+								justify-content: space-around;
+							}
+							@include mq(tb-pc1400){
+								width: 90%;
 							}
 						}
 			.flexItem{
@@ -201,6 +205,10 @@
 								width: 45%;
    						 		padding: 2.5% 1%;
 								@include mq(tb){
+									width: 28.5%;
+									padding: 2% 0.5% !important;
+								}
+								@include mq(tb-pc1400){
 									width: 37.5%;
     								padding: 5% 0.5% !important;
 								}
@@ -224,7 +232,7 @@
 						}
 						a{
 							display: block;
-							padding: 5% 4%;
+							padding: 3% 4% 10%;
 							background: #ffffff;
 							border: 1px solid #707070;
 							border-radius: 5px;
@@ -233,6 +241,7 @@
 							}
 							&::after{
 								content: ">";
+								font-size: 12px;
 								position: absolute;
 								top: 50%;
 								right: 4%;

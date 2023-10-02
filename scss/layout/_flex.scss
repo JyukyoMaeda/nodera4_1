@@ -89,7 +89,7 @@
 						width: auto;
 					}
 					@include mq(sp){
-						width: 56%;
+						width: 70%;
 						padding-left: 4vw;
 					}
 					@include mq(tb){
@@ -144,7 +144,9 @@
 			flex-wrap: nowrap;
 			justify-content: space-between;
 			align-items: center;
+
 			.flexItem{
+				width: 100%;
 				@include mq(tb){
 					width: 49%;
 				}

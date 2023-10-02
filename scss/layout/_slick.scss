@@ -14,6 +14,9 @@
         margin: 0 40px 10px;
         text-align: end;
         @include mq(tb){
+            margin: 0 20px 15px;
+        }
+        @include mq(pc){
             margin: 0 50px 15px;
         }
         img{
@@ -60,11 +63,11 @@
     transition: .8s all;
     @include mq(tb){
         width: 3vw;
-        max-width: 80px;
+        max-width: 20px;
     }
     @include mq(pc){
         width: 1.5vw;
-        max-width: 80px;
+        max-width: 20px;
     }
     &:hover{
         @include mq(sp){
@@ -75,7 +78,7 @@
 .prev-arrow {
 position: absolute;
 top: 50%;
-left: 4%;
+left: 1%;
 transform: translateY(-50%);
 z-index: 1;
 @include mq(tb){
@@ -89,7 +92,7 @@ z-index: 1;
 .next-arrow {
 position: absolute;
 top: 50%;
-right: 4%;
+right: 1%;
 transform: translateY(-50%);
 z-index: 1;
 @include mq(tb){

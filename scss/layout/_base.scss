@@ -82,9 +82,14 @@ body{
 // 開発中ここまで
 // -----------------------------------------------
 
+.lightboxOverlay{
+	overflow-y: hidden;
+}
+
 
 body{
 	animation: fadein 2s forwards;
+	// overflow: hidden;
 }
 img{
 	pointer-events: none;
@@ -104,8 +109,13 @@ img{
 		width: 100% !important;
 	}
 }
+.w1250{
+	width: 75% !important;
+	max-width: 1250px;
+	margin: auto;
+}
 .w1200{
-	width: 95% !important;
+	width: 80% !important;
 	max-width: 1200px;
 	margin: auto;
 	&.-s100{
@@ -113,12 +123,17 @@ img{
 	}
 }
 .w1050{
-	width: 95%;
+	width: 70% !important;
 	max-width: 1050px;
 	margin: auto;
 }
+.w1000{
+	width: 75% !important;
+	max-width: 1000px;
+	margin: auto;
+}
 .w850{
-	width: 85%;
+	width: 85% !important;
 	max-width: 850px;
 	margin: auto;
 }
@@ -204,7 +219,7 @@ img{
 // 下のみ
 .l-mgb_1_s{
 	@include mq(sp){
-		margin-bottom: 1vh !important;
+		margin-bottom: 1.5vh !important;
 	}
 }
 .l-mgb_2_s{
@@ -277,6 +292,22 @@ img{
 	}
 	@include mq(tb){
 		margin-bottom: 10vh !important;
+	}
+}
+.l-mgb_15{
+	margin-bottom : 8vh !important;
+	&.-s_1{
+		@include mq(sp){
+			margin-bottom: 1vh !important;
+		}
+	}
+	&.-s_5{
+		@include mq(sp){
+			margin-bottom: 5vh !important;
+		}
+	}
+	@include mq(tb){
+		margin-bottom: 15vh !important;
 	}
 }
 .l-mgb_20{

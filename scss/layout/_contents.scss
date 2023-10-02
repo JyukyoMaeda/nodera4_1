@@ -25,6 +25,9 @@
 					}
 				}
 			}
+			&.-tabBox{
+				background: black;
+			}
 		}
 		.l-contentsBox{// コンテンツ要素
 			width: 100%;
@@ -112,17 +115,23 @@
 			}
 
 			// 新築戸建 > タブ
+			// &.-tabBox{
+			// 	top: 50%;
+			// 	left: 50%;
+			// 	transform: translate(-50%, -50%);
+			// 	width: 100%;
+			// }
 			&.-tab-sliderArea{
 				@include mq(sp){
-					top: 10%;
-					// top: 5%;
+					// top: 10%;
+					top: 5%;
 					left: 50%;
 					transform: translateX(-50%);
 					width: 90%;
 				}
 				@include mq(tb){
-					top: 10%;
-					// top: 6%;
+					// top: 10%;
+					top: 6%;
 					left: 6%;
 					width: 45%;
 				}
