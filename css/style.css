@@ -2450,6 +2450,9 @@ img {
 .l-slider {
   margin: 30px 0 auto auto;
 }
+.l-slider .tab-thum .slick-track {
+  width: auto !important;
+}
 .l-slider .l-slickImg {
   margin: 0 40px 10px;
   text-align: end;
