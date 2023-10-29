@@ -63,7 +63,7 @@
         &.-sizeM{
             font-size: 10px;
             @include mq(tb){
-                font-size: clamp(12px, 1.3vw, 18px);
+                font-size: clamp(12px, 1.3vw, 16px);
             }
             &.-v02{
                 @include mq(tb){
@@ -424,9 +424,10 @@
     &.-BUILDHOUSE{
         position: relative;
         &::after{
-            content: "BUILT HOUSE";
+            content: "MODEL&BUILT HOUSE";
             font-size: .6vw;
             font-weight: bold;
+            white-space: nowrap;
             position: absolute;
             top:20%;
             left: 50%;

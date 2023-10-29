@@ -2590,7 +2590,7 @@ img {
 }
 @media screen and (min-width: 767px) {
   .l-text.-sizeM {
-    font-size: clamp(12px, 1.3vw, 18px);
+    font-size: clamp(12px, 1.3vw, 16px);
   }
 }
 @media screen and (min-width: 767px) {
@@ -2963,9 +2963,10 @@ img {
   position: relative;
 }
 .l-text.-BUILDHOUSE::after {
-  content: "BUILT HOUSE";
+  content: "MODEL&BUILT HOUSE";
   font-size: 0.6vw;
   font-weight: bold;
+  white-space: nowrap;
   position: absolute;
   top: 20%;
   left: 50%;
