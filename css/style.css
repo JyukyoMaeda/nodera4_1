@@ -2478,7 +2478,7 @@ img {
   transform: unset !important;
 }
 .l-slider .tab-thum.-Box44 .thumbnail-img {
-  width: 23% !important;
+  width: calc(25% - 4px) !important;
   margin: 2px;
   background: black;
   overflow: hidden;

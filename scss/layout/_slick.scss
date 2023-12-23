@@ -39,7 +39,7 @@
                     transform: unset !important;
                 }
                 .thumbnail-img{
-                    width: 23% !important;
+                    width: calc(25% - 4px) !important;
                     margin: 2px;
                     background: black;
                     overflow: hidden;
