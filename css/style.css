@@ -258,11 +258,11 @@ img {
 }
 
 .l-mgt_20 {
-  margin-top: 30vh !important;
+  margin-top: 29vh !important;
 }
 @media screen and (min-width: 767px) {
   .l-mgt_20 {
-    margin-top: 20vh !important;
+    margin-top: 15vh !important;
   }
 }
 
@@ -859,7 +859,7 @@ img {
 }
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .l-contentsBox.-youtubeArea {
-    top: 65%;
+    top: 70%;
   }
 }
 .l-contents.-img-bg .l-contentsBox.-onClickImg_item01 {
