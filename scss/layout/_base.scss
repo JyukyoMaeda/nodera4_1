@@ -105,8 +105,13 @@ img{
 	width: 95% !important;
 	max-width: 1600px;
 	margin: auto;
-	&.-s100{
+	&.-w100{
 		width: 100% !important;
+	}
+	&.-s100{
+		@include mq(sp){
+			width: 100% !important;
+		}
 	}
 }
 .w1250{

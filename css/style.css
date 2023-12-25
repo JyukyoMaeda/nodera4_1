@@ -23,6 +23,9 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 img {
   width: 100%;
@@ -157,8 +160,13 @@ img {
   max-width: 1600px;
   margin: auto;
 }
-.w1600.-s100 {
+.w1600.-w100 {
   width: 100% !important;
+}
+@media screen and (max-width: 768px) {
+  .w1600.-s100 {
+    width: 100% !important;
+  }
 }
 
 .w1250 {
