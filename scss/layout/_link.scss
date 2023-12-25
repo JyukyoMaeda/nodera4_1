@@ -43,6 +43,11 @@
             }
         }
     }
+    &.-sp-c{
+        @include mq(sp){
+            text-align: center;
+        }
+    }
 
 
     &.-contact{

@@ -1460,6 +1460,9 @@ img {
     height: 100%;
   }
 }
+.l-flex--area .l-flex--contents.-columnBox02.-okano1225 {
+  justify-content: center !important;
+}
 .l-flex--area .l-flex--contents.-columnBox03 {
   display: flex;
   flex-wrap: wrap;
@@ -2268,6 +2271,11 @@ img {
   .l-linkImg.-p03:hover {
     transform: scale(0.95);
     transition-duration: 0.2s;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-linkImg.-sp-c {
+    text-align: center;
   }
 }
 .l-linkImg.-contact {
